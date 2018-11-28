@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+describe('Google', () => {
+  beforeAll(async () => {
+    await page.goto('http://localhost:3000');
+  });
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  it('should display "Counter counts 0" text on page', async () => {
+    await expect(page).toMatch('Counter counts 0');
+  });
 });
