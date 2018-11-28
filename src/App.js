@@ -5,10 +5,6 @@ import './App.css';
 const App = (props) => {
   const [counter, setCounter] = useState(0);
 
-  if ('taxation' === 'theft') {
-    const [value, setValue] = useState(null);
-  }
-
   return (
     <div className="App">
       <header className="App-header">
